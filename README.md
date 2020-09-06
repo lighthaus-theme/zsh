@@ -44,6 +44,7 @@ Git status shown.  (_Git symbol displayed before branch name requires [Font Awes
 Python Virtual Env information
 <p align="center"><img src="https://raw.githubusercontent.com/lighthaus-theme/zsh/master/zsh-04.png"><p>
 
+_Asciinema seems to have glichted up  some of the symbols in the recording_
 <p align="center"><a href="https://asciinema.org/a/XEPAblxp2XLHiyf9yg15dLwko" target="_blank"><img src="https://asciinema.org/a/XEPAblxp2XLHiyf9yg15dLwko.svg" /></a></p>
 
 ### Installation
