@@ -45,7 +45,7 @@ Python Virtual Env information
 <p align="center"><img src="https://raw.githubusercontent.com/lighthaus-theme/zsh/master/zsh-04.png"><p>
 
 _Asciinema seems to have glichted up  some of the symbols in the recording_
-<p align="center"><a href="https://asciinema.org/a/XEPAblxp2XLHiyf9yg15dLwko" target="_blank"><img src="https://asciinema.org/a/XEPAblxp2XLHiyf9yg15dLwko.svg" /></a></p>
+<p align="center"><a href="https://asciinema.org/a/361716" target="_blank"><img src="https://asciinema.org/a/361716.svg" /></a></p>
 
 ### Installation
 - Download the [.zip](https://github.com/lighthaus-theme/zsh/archive/master.zip) and unzip it.
@@ -68,7 +68,7 @@ _All changes are recorded in [CHANGELOG](https://github.com/lighthaus-theme/zsh/
 ### Bugs/Issues
 Please report any bugs or issues [here](https://github.com/lighthaus-theme/zsh/issues).
 
-### License 
+### License
 
 _Copyright © 2020-Present Lighthaus Theme_<br>
 _Copyright © 2020-Present Adhiraj Sirohi_<br>
