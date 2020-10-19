@@ -1,9 +1,8 @@
 # Lighthaus Color theme for ZSH Prompt
-# GIT: https://github.com/lighthaus-theme/alacritty
+# GIT: https://github.com/lighthaus-theme/zsh
 # Author: Adhiraj Sirohi (https://github.com/brutuski)
 #         Vasundhara Sharma (https://github.com/vasundhasauras)
 
-# Copyright © 2020-Present Lighthaus Theme
 # Copyright © 2020-Present Adhiraj Sirohi
 # Copyright © 2020-Present Vasundhara Sharma
 
@@ -30,10 +29,10 @@ fi
 
 
 # Git info theming
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$_BLUE%} %{$_RESET%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$_BLUE%} %{$_RESET%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$_RESET%}"
 
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$_ORANGE%} ❗  %{$_RESET%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$_ORANGE%} ❗%{$_RESET%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$_GREEN%} ✔ %{$_RESET%}"
 
 ZSH_THEME_GIT_PROMPT_ADDED="%{$_GREEN%}+ %{$_RESET%}"
@@ -47,8 +46,6 @@ ZSH_THEME_GIT_PROMPT_DIVERGED="%{$_YELLOW%}↕%{$_RESET%}"
 
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$_YELLOW%}❓%{$_RESET%}"
 
-
-# Show number of background jobs
 bg_jobs() {
     _JOBS=$(jobs | wc -l)
     if [[ $_JOBS -gt "0" ]]; then
@@ -57,17 +54,24 @@ bg_jobs() {
 }
 
 
-# Display GIT Info
 lighthaus_git_prompt() {
     _BRANCH=$(git_current_branch)
+    _GIT_SRC=""
 
     if [[ -n "$_BRANCH" ]]; then
-        echo "｢$ZSH_THEME_GIT_PROMPT_PREFIX$(git_current_branch)$(parse_git_dirty)$(git_prompt_status)$ZSH_THEME_GIT_PROMPT_SUFFIX｣"
+        if [[ $(git remote get-url origin | grep -m1 -o 'github') == "github" ]]; then
+           _GIT_SRC="%{$_PURPLE%} %{$_RESET%}"
+        elif [[ $(git remote get-url origin | grep -m1 -o 'gitlab') == "gitlab" ]]; then
+            _GIT_SRC="%{$_PURPLE%} %{$_RESET%}"
+        else
+            _GIT_SRC=""
+        fi
+        echo "｢$_GIT_SRC $ZSH_THEME_GIT_PROMPT_PREFIX$(git_current_branch)$(parse_git_dirty)$(git_prompt_status)$ZSH_THEME_GIT_PROMPT_SUFFIX｣"
     fi
 }
 
 
-# If Python virtual environment
+# If Python virtual environment 
 python_virtual() {
     _VIRENV="$VIRTUAL_ENV"
 
@@ -77,8 +81,6 @@ python_virtual() {
     fi
 }
 
-
-# Show SSH info
 ssh_name() {
     _SSH=""
     if [ -z "$SSH_CLIENT" ] || [ -z "$SSH_TTY" ]; then
@@ -93,20 +95,16 @@ ssh_name() {
 # Prompt components
 _POST_PROMPT="%B%{$_YELLOW%}⟶ %{$_RESET%}"
 _LIGHTHAUS="%B%{$_ORANGE%}⛯ %{$_RESET%}"
-_RETURN_CODE="%(?..%{$_RED%}%? ↵%{$_RESET%})"
-
+_RETURN_CODE="%(?..%{$_ORANGE%}%? ↵%{$_RESET%})"
 
 # RPrompt components
 _TIME="%{$_YELLOW%}｢%T｣%{$_RESET%}"
 _DIR="%{$_GREEN%}｢%2~/｣ %{$_RESET%}"
 
-
 setopt PROMPT_SUBST
-
 
 local _lineUp=$'\e[1A'
 local _lineDown=$'\e[1B'
-
 
 PROMPT='$_USER $_LIGHTHAUS $(python_virtual) $(bg_jobs) $(ssh_name) $_RETURN_CODE 
  $_POST_PROMPT $_SYMBOL'

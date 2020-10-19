@@ -1,9 +1,15 @@
 # Changelog
 
 ### Table of Contents
+- [v1.1.1](#v1.1.1)
 - [v1.0.0](#v1.0.0)
 - [Versioning System](#versioning-system)
 - [License](#license)
+
+### v1.1.1
+- **Added Symbols for Github/Gitlab** (_19/10/2020_)
+- Changed color for _return codes_
+- Fixed spacing error for git symbols
 
 ### v1.0.0
 - Initial Commit (_05/09/2020_)
