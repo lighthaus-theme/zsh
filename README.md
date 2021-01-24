@@ -61,6 +61,7 @@ _Asciinema seems to have glichted up  some of the symbols in the recording_
     -   ``` vim
         ZSH_THEME="lighthaus.zsh-theme"
         ```
+_Some MacOS users might encounter an issue with unicode characters not being rendered properly. Downloading and installing the Quivira Font solves this issue._
 
 ### Version
 ```
