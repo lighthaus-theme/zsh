@@ -54,8 +54,10 @@ Github or Gitlab logos shown, depending on the origin of the repo
 Python Virtual Env information
 <p align="center"><img src="https://github.com/lighthaus-theme/zsh/blob/master/assets/zsh-04.png?raw=true"><p>
 
-_Asciinema seems to have glichted up  some of the symbols in the recording_
-<p align="center"><a href="https://asciinema.org/a/366292" target="_blank"><img src="https://asciinema.org/a/366292.svg" /></a><p>
+Git Demo
+<p align="center"><img src="https://github.com/lighthaus-theme/zsh/blob/master/assets/zsh-demo.gif?raw=true"><p>
+
+
 
 ### Installation
 - Download the [.zip](https://github.com/lighthaus-theme/zsh/archive/master.zip) and unzip it.
@@ -82,7 +84,9 @@ Please report any bugs or issues [here](https://github.com/lighthaus-theme/zsh/i
 ### License
 
 _Copyright © 2020-Present Lighthaus Theme_
+
 _Copyright © 2020-Present Adhiraj Sirohi_
+
 _Copyright © 2020-Present Vasundhara Sharma_
 
 <p align="left"><a href="https://github.com/lighthaus-theme/zsh/blob/master/LICENSE"><img src="https://img.shields.io/static/v1.svg??style=flat&logo=appveyore&label=License&message=MIT&colorA=1C918A&colorB=50C16E"/></a></p>
