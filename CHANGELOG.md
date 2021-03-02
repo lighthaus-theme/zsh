@@ -1,10 +1,14 @@
 # Changelog
 
 ### Table of Contents
+- [v1.1.2](#v1.1.2)
 - [v1.1.1](#v1.1.1)
 - [v1.0.0](#v1.0.0)
 - [Versioning System](#versioning-system)
 - [License](#license)
+
+### v1.1.2
+- Fix for errors when local git repo doesn't have any remote
 
 ### v1.1.1
 - **Added Symbols for Github/Gitlab** (_19/10/2020_)

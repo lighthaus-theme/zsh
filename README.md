@@ -1,4 +1,7 @@
-# ZSH Lighthaus
+<p align="center"><img src="https://raw.githubusercontent.com/lighthaus-theme/zsh/4ccecc84e56e269876dae75fcb31f754e1adba46/assets/zsh-badge.svg" width="150"><p>
+
+<h2 align="center">ZSH Lighthaus</h2>
+
 A [ZSH](https://www.zsh.org/) Prompt that compliments the [Lighthaus](https://github.com/lighthaus-theme/lighthaus/zsh) theme. </br>
 
 
@@ -19,7 +22,7 @@ Some of the features include:
 - Background jobs
 - Return Codes
 
-Github <img src="https://raw.githubusercontent.com/lighthaus-theme/zsh/master/github-logo.png" width="20" height="20"> or Gitlab <img src="https://raw.githubusercontent.com/lighthaus-theme/zsh/master/gitlab-logo.png" width="20" height="20"> symbol shown depending on the origin of the repo.
+Github <img src="https://github.com/lighthaus-theme/zsh/blob/master/assets/github-logo.png?raw=true" width="20" height="20"> or Gitlab <img src="https://github.com/lighthaus-theme/zsh/blob/master/assets/gitlab-logo.png?raw=true" width="20" height="20"> symbol shown depending on the origin of the repo.
 
 
 Git symbols used:
@@ -34,20 +37,22 @@ Git symbols used:
 
 ### Screenshots
 
+<p align="center"><img src="https://github.com/lighthaus-theme/zsh/blob/master/assets/zsh-01.png?raw=true"></p>
+
 Folders are shown at a depth of 2
-<p align="center"><img src="https://raw.githubusercontent.com/lighthaus-theme/zsh/master/zsh-01.png"><p>
+<p align="center"><img src="https://github.com/lighthaus-theme/zsh/blob/master/assets/zsh-02.png?raw=true"><p>
 
 Command return codes are displayed
-<p align="center"><img src="https://raw.githubusercontent.com/lighthaus-theme/zsh/master/zsh-02.png"><p>
+<p align="center"><img src="https://github.com/lighthaus-theme/zsh/blob/master/assets/zsh-03.png?raw=true"><p>
 
 Git status shown.  (_Git symbol displayed before branch name requires [Font Awesome](https://fontawesome.com/)_)
-<p align="center"><img src="https://raw.githubusercontent.com/lighthaus-theme/zsh/master/zsh-03.png"><p>
+<p align="center"><img src="https://github.com/lighthaus-theme/zsh/blob/master/assets/zsh-06.png?raw=true"><p>
 
 Github or Gitlab logos shown, depending on the origin of the repo
-<p align="center"><img src="https://raw.githubusercontent.com/lighthaus-theme/zsh/master/zsh-05.png"><p>
+<p align="center"><img src="https://github.com/lighthaus-theme/zsh/blob/master/assets/zsh-05.png?raw=true"><p>
 
 Python Virtual Env information
-<p align="center"><img src="https://raw.githubusercontent.com/lighthaus-theme/zsh/master/zsh-04.png"><p>
+<p align="center"><img src="https://github.com/lighthaus-theme/zsh/blob/master/assets/zsh-04.png?raw=true"><p>
 
 _Asciinema seems to have glichted up  some of the symbols in the recording_
 <p align="center"><a href="https://asciinema.org/a/366292" target="_blank"><img src="https://asciinema.org/a/366292.svg" /></a><p>
@@ -64,8 +69,8 @@ _Asciinema seems to have glichted up  some of the symbols in the recording_
 _Some MacOS users might encounter an issue with unicode characters not being rendered properly. Downloading and installing the Quivira Font solves this issue._
 
 ### Version
-```
-v 1.1.1
+```vim 
+v 1.1.2
 ```
 
 _Lighthaus and all it's projects use [Semantic Versioning](https://semver.org/)._ <br/>
@@ -76,8 +81,8 @@ Please report any bugs or issues [here](https://github.com/lighthaus-theme/zsh/i
 
 ### License
 
-_Copyright © 2020-Present Lighthaus Theme_<br>
-_Copyright © 2020-Present Adhiraj Sirohi_<br>
+_Copyright © 2020-Present Lighthaus Theme_
+_Copyright © 2020-Present Adhiraj Sirohi_
 _Copyright © 2020-Present Vasundhara Sharma_
 
 <p align="left"><a href="https://github.com/lighthaus-theme/zsh/blob/master/LICENSE"><img src="https://img.shields.io/static/v1.svg??style=flat&logo=appveyore&label=License&message=MIT&colorA=1C918A&colorB=50C16E"/></a></p>
