@@ -59,9 +59,9 @@ lighthaus_git_prompt() {
     _GIT_SRC=""
 
     if [[ -n "$_BRANCH" ]]; then
-        if [[ $(git remote get-url origin | grep -m1 -o 'github') == "github" ]]; then
+        if [[ $(git remote get-url origin 2> /dev/null | grep -m1 -o 'github') == "github" ]]; then
            _GIT_SRC="%{$_PURPLE%} %{$_RESET%}"
-        elif [[ $(git remote get-url origin | grep -m1 -o 'gitlab') == "gitlab" ]]; then
+        elif [[ $(git remote get-url origin 2> /dev/null | grep -m1 -o 'gitlab') == "gitlab" ]]; then
             _GIT_SRC="%{$_PURPLE%} %{$_RESET%}"
         else
             _GIT_SRC=""
